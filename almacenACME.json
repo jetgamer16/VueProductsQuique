@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mobiliarioss",
+      "description": "Muebles de oficina"
+    },
+    {
+      "id": 2,
+      "name": "FungibleS",
+      "description": "Tóners, papel, ..."
+    },
+    {
+      "id": 3,
+      "name": "Mobiliario",
+      "description": "Muebles de oficina"
+    },
+    {
+      "id": 4,
+      "name": "Mobiliario",
+      "description": "Muebles de oficina"
+    }
+  ],
+  "products": [
+    {
+      "name": "Mesa de impresora",
+      "price": 46.1,
+      "categoryId": 1,
+      "units": 3,
+      "id": 3
+    },
+    {
+      "name": "Mesa de ordenador12",
+      "price": 125.95,
+      "categoryId": 1,
+      "units": 3,
+      "id": 1
+    },
+    {
+      "name": "asckjagbkfjbjk",
+      "categoryId": 1,
+      "price": 2,
+      "units": 2,
+      "id": 4
+    },
+    {
+      "name": "asckjagbkfjbjk",
+      "categoryId": 1,
+      "price": 2,
+      "units": 2,
+      "id": 5
+    }
+  ]
+}
