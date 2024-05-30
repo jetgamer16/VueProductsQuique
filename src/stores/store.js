@@ -21,7 +21,7 @@ export const useDataStore = defineStore('data', {
       }else{
       try{
         const response = await this.cateRepo.addItem(categoria)
-        this.categorias.push(response.data)
+        this.categorias.push(response)
       }catch(e){
         alert("Ha fallado: "+e)
         console.error(e)
@@ -37,10 +37,15 @@ export const useDataStore = defineStore('data', {
       console.error(e)
     }
     },
-    async deleteCategory (index) {
-      if(confirm("Estas seguro de borrar el item con ID: "+index)){
-      this.categorias.splice(index,1)
-      await this.cateRepo.delItem(index)
+    async deleteCategory (id) {
+      if(confirm("Estas seguro de borrar el item con ID: "+id)){
+        try{
+          await this.cateRepo.delItem(id)
+        }catch(err){
+          console.error(err)
+        }
+        const index = this.categorias.findIndex(categoria => categoria.id == id)
+        this.categorias.splice(index,1)
       }
     },
   }

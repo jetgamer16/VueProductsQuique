@@ -36,11 +36,11 @@ mounted(){
 
 <template>
 <h1>FORMULARIO CATEGORIAS</h1>
-  <form @submit="addItem()" >
+  <form @submit.prevent="addItem()" >
 
-  <div v-if="edit" disable>
+  <div v-if="edit">
   <label for="id">Id:</label>
-  <input type="text" v-model="categoria.id"  />
+  <input type="text" disabled  v-model="categoria.id"  />
   </div>
 
   <div>

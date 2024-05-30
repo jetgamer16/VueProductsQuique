@@ -23,7 +23,6 @@ export default {
     ...mapActions(useDataStore, ['editCategory', 'deleteCategory']),
     async deleteCategoria(id) {
       await this.deleteCategory(id)
-      this.product = {}
       this.$router.push('/categorias')
     },
     editCategory(category) {

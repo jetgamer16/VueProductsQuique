@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": 1,
-      "name": "Mobiliarioss",
+      "name": "Mobiliario",
       "description": "Muebles de oficina"
     },
     {
@@ -16,17 +16,28 @@
       "description": "Muebles de oficina"
     },
     {
-      "id": 4,
-      "name": "Mobiliario",
-      "description": "Muebles de oficina"
+      "name": "Problemas",
+      "id": 4
+    },
+    {
+      "name": "Pedro",
+      "id": 5
+    },
+    {
+      "name": "ajhkfjh",
+      "id": 6
+    },
+    {
+      "name": "drtfcygvbhnj",
+      "id": 7
     }
   ],
   "products": [
     {
-      "name": "Mesa de impresora",
+      "name": "Mesa de impresorao",
       "price": 46.1,
-      "categoryId": 1,
-      "units": 3,
+      "categoryId": 2,
+      "units": 2,
       "id": 3
     },
     {

@@ -38,9 +38,9 @@ export default {
 <h1>FORMULARIO PRODUCTOS</h1>
 <form @submit.prevent="addProduct()">
 
-  <div id="idProd" :hidden="edit">
+  <div id="idProd" v-if="edit">
   <label for="id">Id:</label>
-  <input type="text" v-model="producto.id"  />
+  <input type="text" disabled v-model="producto.id"  />
   </div>
 
   <div>

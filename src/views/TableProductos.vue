@@ -16,11 +16,11 @@ export default{
     this.productos = await this.repoProd.getAll()
   },
   methods:{
-    async deleteProducto (index) {
-      if(confirm("estas seguro de que quieres borrar el producto: "+index)){
-      await this.repoProd.delItem(index)
-      this.products.splice(index,1)
-      this.$route.push("/")
+    async deleteProducto (id) {
+      if(confirm("estas seguro de que quieres borrar el producto: "+id)){
+      await this.repoProd.delItem(id)
+      const index = this.productos.findIndex(producto => producto.id==id)
+      this.productos.splice(index,1)
       }
     },
      editProducto(producto) {

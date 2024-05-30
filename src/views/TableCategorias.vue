@@ -1,7 +1,7 @@
 <script>
 import CateItem from "../components/CateItem.vue"
 import { useDataStore } from '@/stores/store'
-import { mapState } from 'pinia'
+import { mapActions, mapState } from 'pinia'
 
 //import { RouterLink } from 'vue-router'
 export default {
@@ -9,11 +9,17 @@ export default {
     ...mapState(useDataStore, ['categorias'])
   },
   data() {
-    return {}
+    return {
+    }
   },
   components: {
     CateItem
   },
+  methods:{
+    ...mapActions(useDataStore,['fillCategories']),
+
+  }
+
 }
 </script>
 
